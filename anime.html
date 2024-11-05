@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #081b29;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+    }
+
+    h1 {
+      margin-top: 1em;
+      font-size: 2em;
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10vmin;
+      overflow: hidden;
+      transform: skew(5deg);
+    }
+
+    .card {
+      flex: 1;
+      transition: all 1s ease-in-out;
+      height: 75vmin;
+      position: relative;
+    }
+
+    .card__head {
+      color: black;
+      background: #00abf0;
+      padding: 0.5em;
+      transform: rotate(-90deg);
+      transform-origin: 0% 0%;
+      transition: all 0.5s ease-in-out;
+      min-width: 100%;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      font-size: 1em;
+      white-space: nowrap;
+    }
+
+    .card:hover {
+      flex-grow: 10;
+    }
+
+    .card:hover img {
+      filter: grayscale(0);
+    }
+
+    .card:hover .card__head {
+      text-align: center;
+      top: calc(100% - 2em);
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      font-size: 2em;
+      transform: rotate(0deg) skew(-5deg);
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 1s ease-in-out;
+      filter: grayscale(100%);
+    }
+
+    .card:not(:nth-child(5)) {
+      margin-right: 1em;
+    }
+
+    .references {
+      margin-top: 2em;
+      font-size: 0.9em;
+      text-align: left;
+      width: 60%;
+    }
+
+    .references a {
+      color: #00abf0;
+      text-decoration: none;
+    }
+  </style>
+
+  <body>
+    <h1>My Favorite Animes to Watch</h1>
+    <div class="container">
+      <div class="card">
+        <a
+          href="https://tradejapanstore.com/products/naruto-vol-26"
+          target="_blank"
+        >
+          <img src="/Naruto.jpeg" />
+        </a>
+        <div class="card__head">Naruto Shippuden</div>
+      </div>
+      <div class="card">
+        <a
+          href="https://onepiece.fandom.com/wiki/Volume_110?file=Volume_110.png"
+          target="_blank"
+        >
+          <img src="/OP.jpeg" />
+        </a>
+        <div class="card__head">One Piece</div>
+      </div>
+      <div class="card">
+        <a
+          href="https://www.kobo.com/ph/en/ebook/my-hero-academia-vol-26"
+          target="_blank"
+        >
+          <img src="/MHA.jpg" />
+        </a>
+        <div class="card__head">My Hero Academia</div>
+      </div>
+      <div class="card">
+        <a
+          href="https://japaneseanime.fandom.com/wiki/Major_(Anime)?file=Major.jpg"
+          target="_blank"
+        >
+          <img src="/Major.jpeg" />
+        </a>
+        <div class="card__head">Major</div>
+      </div>
+      <div class="card">
+        <a
+          href="https://www.mobygames.com/game/173821/demon-slayer-kimetsu-no-yaiba-the-hinokami-chronicles/cover/group-314979/cover-770656/"
+          target="_blank"
+        >
+          <img src="/DemonSlayer.jpg" />
+        </a>
+        <div class="card__head">Demon Slayer</div>
+      </div>
+      <div class="card">
+        <a
+          href="https://dragonball.fandom.com/wiki/Dragon_Ball_Super_(anime)?file=Dragon_Ball_Super_Poster.jpg"
+          target="_blank"
+        >
+          <img src="/DB.jpeg" />
+        </a>
+        <div class="card__head">Dragon Ball</div>
+      </div>
+      <div class="card">
+        <a
+          href="https://en.wikipedia.org/wiki/The_Seven_Deadly_Sins_%28manga%29#/media/File:Nanatsu_no_Taizai_Volume_1.png"
+          target="_blank"
+        >
+          <img src="/SDS.png" />
+        </a>
+        <div class="card__head">Seven Deadly Sins</div>
+      </div>
+      <div class="card">
+        <a
+          href="https://www.kobo.com/ph/en/ebook/dr-stone-vol-10"
+          target="_blank"
+        >
+          <img src="/dr-stone.jpg" />
+        </a>
+        <div class="card__head">Doctor Stone</div>
+      </div>
+    </div>
+
+    <div class="references">
+      <h2>References:</h2>
+      <ul>
+        <li>
+          <a
+            href="https://tradejapanstore.com/products/naruto-vol-26"
+            target="_blank"
+            >Naruto Shippuden - tradejapanstore.com</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://onepiece.fandom.com/wiki/Volume_110?file=Volume_110.png"
+            target="_blank"
+            >One Piece - onepiece.fandom.com</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.kobo.com/ph/en/ebook/my-hero-academia-vol-26"
+            target="_blank"
+            >My Hero Academia - kobo.com</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://japaneseanime.fandom.com/wiki/Major_(Anime)?file=Major.jpg"
+            target="_blank"
+            >Major - japaneseanime.fandom.com</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.mobygames.com/game/173821/demon-slayer-kimetsu-no-yaiba-the-hinokami-chronicles/cover/group-314979/cover-770656/"
+            target="_blank"
+            >Demon Slayer - mobygames.com</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://dragonball.fandom.com/wiki/Dragon_Ball_Super_(anime)?file=Dragon_Ball_Super_Poster.jpg"
+            target="_blank"
+            >Dragon Ball - dragonball.fandom.com</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://en.wikipedia.org/wiki/The_Seven_Deadly_Sins_%28manga%29#/media/File:Nanatsu_no_Taizai_Volume_1.png"
+            target="_blank"
+            >Seven Deadly Sins - en.wikipedia.org</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.kobo.com/ph/en/ebook/dr-stone-vol-10"
+            target="_blank"
+            >Doctor Stone - kobo.com</a
+          >
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
